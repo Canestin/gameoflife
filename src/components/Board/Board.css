@@ -1,0 +1,29 @@
+.container {
+  /* background-color: red; */
+}
+
+.board {
+  margin: auto;
+  width: 90vh;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: repeat(40, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.cell_alive {
+  background-color: black !important;
+}
