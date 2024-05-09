@@ -71,7 +71,7 @@ const Board = () => {
 
     const t = setInterval(() => {
       setBoard(generateState(board));
-    }, 500);
+    }, 100);
 
     return () => clearInterval(t);
   }, [board, timer]);
@@ -101,6 +101,15 @@ const Board = () => {
         )}
       </div>
 
+      <button
+        onClick={() => {
+          setBoard(generateInitialState(size));
+        }}
+        className="favorite styled"
+        type="button"
+      >
+        RANDOM
+      </button>
       <button
         onClick={() => setTimer(true)}
         className="favorite styled"

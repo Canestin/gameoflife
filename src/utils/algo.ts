@@ -1,10 +1,10 @@
 const generateInitialState = (size: number) => {
   const initial = new Array(size);
   for (let i = 0; i < size; i++) {
-    const layer = i;
-    // const layer = Math.ceil(i / 10);
+    // const layer = i;
+    const layer = Math.ceil(i / 10);
     initial[i] = new Array(size);
-    let limitLive = 10;
+    let limitLive = size;
 
     for (let j = 0; j < size; j++) {
       if (layer % 2 === 0) {
